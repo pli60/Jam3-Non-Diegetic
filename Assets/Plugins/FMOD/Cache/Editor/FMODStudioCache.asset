@@ -1,0 +1,555 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8118553296716051959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Drums/isGremlinAlive
+  m_EditorClassIdentifier: 
+  Name: isGremlinAlive
+  StudioPath: 
+  Min: -1
+  Max: 1
+  Default: 0
+  ID:
+    data1: 943922923
+    data2: 3285639766
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5186357318349291363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reverb/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reverb/Cave Reverb
+  Guid:
+    Data1: -1231688000
+    Data2: 1196818040
+    Data3: -1869216072
+    Data4: 201092544
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5031335473137403814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Health Low
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Health Low
+  Guid:
+    Data1: -2014691020
+    Data2: 1318977521
+    Data3: 1244236687
+    Data4: 595743019
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-3778880410315595630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Piano
+  m_EditorClassIdentifier: 
+  Path: event:/Piano
+  Guid:
+    Data1: -1311124104
+    Data2: 1127216328
+    Data3: -2044124494
+    Data4: -1318273808
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7701512695136985462}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16169
+--- !u!114 &-2852547754437621853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/DrumIsMute
+  m_EditorClassIdentifier: 
+  Name: DrumIsMute
+  StudioPath: parameter:/Music/DrumIsMute
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 837078692
+    data2: 2778547226
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2611970808427732109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Guitar
+  m_EditorClassIdentifier: 
+  Path: event:/Guitar
+  Guid:
+    Data1: -1296701836
+    Data2: 1187382034
+    Data3: -1601040509
+    Data4: -210365540
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4506367234425670801}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16169
+--- !u!114 &-729199473787058114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Strings/isGremlinAlive
+  m_EditorClassIdentifier: 
+  Name: isGremlinAlive
+  StudioPath: 
+  Min: -1
+  Max: 1
+  Default: 0
+  ID:
+    data1: 943922923
+    data2: 3285639766
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-34687863180229576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Jam1FmodProject/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638012796140000000
+  FileSizes:
+  - Name: Desktop
+    Value: 1906
+  - Name: HTML5
+    Value: 1906
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -34687863180229576}
+  - {fileID: 4350554915367717785}
+  EditorEvents:
+  - {fileID: 3649572742633740714}
+  - {fileID: 2540136144844393251}
+  - {fileID: -5031335473137403814}
+  - {fileID: 2711646650036169886}
+  - {fileID: -2611970808427732109}
+  - {fileID: -3778880410315595630}
+  - {fileID: 339149875236832857}
+  - {fileID: 8179708062584436292}
+  - {fileID: 8141998068430954990}
+  - {fileID: -5186357318349291363}
+  - {fileID: 2532506091496225180}
+  - {fileID: 9060262719194871311}
+  EditorParameters:
+  - {fileID: -2852547754437621853}
+  MasterBanks:
+  - {fileID: 4350554915367717785}
+  StringsBanks:
+  - {fileID: -34687863180229576}
+  cacheTime: 638012796140000000
+  cacheVersion: 131593
+--- !u!114 &339149875236832857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Finale
+  m_EditorClassIdentifier: 
+  Path: event:/Finale
+  Guid:
+    Data1: 180068736
+    Data2: 1161208853
+    Data3: 358792357
+    Data4: -1012127329
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29283
+--- !u!114 &1098131556656120434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Horns/isGremlinAlive
+  m_EditorClassIdentifier: 
+  Name: isGremlinAlive
+  StudioPath: 
+  Min: -1
+  Max: 1
+  Default: 0
+  ID:
+    data1: 943922923
+    data2: 3285639766
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2532506091496225180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Drums
+  m_EditorClassIdentifier: 
+  Path: event:/Drums
+  Guid:
+    Data1: 1086996171
+    Data2: 1218460524
+    Data3: 1800986535
+    Data4: -623509056
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8118553296716051959}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16169
+--- !u!114 &2540136144844393251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GremlinDeath
+  m_EditorClassIdentifier: 
+  Path: event:/GremlinDeath
+  Guid:
+    Data1: -1765734605
+    Data2: 1319049947
+    Data3: 188529048
+    Data4: -777478501
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1544
+--- !u!114 &2711646650036169886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Horns
+  m_EditorClassIdentifier: 
+  Path: event:/Horns
+  Guid:
+    Data1: -1844827835
+    Data2: 1122062480
+    Data3: -2075737470
+    Data4: 1236943011
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1098131556656120434}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16169
+--- !u!114 &3649572742633740714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Slow-Motion
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Slow-Motion
+  Guid:
+    Data1: 1854770441
+    Data2: 1221530336
+    Data3: -856088394
+    Data4: -1552366533
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4350554915367717785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Jam1FmodProject/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638012796140000000
+  FileSizes:
+  - Name: Desktop
+    Value: 1477792
+  - Name: HTML5
+    Value: 1477696
+  Exists: 1
+--- !u!114 &4506367234425670801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Guitar/isGremlinAlive
+  m_EditorClassIdentifier: 
+  Name: isGremlinAlive
+  StudioPath: 
+  Min: -1
+  Max: 1
+  Default: 0
+  ID:
+    data1: 943922923
+    data2: 3285639766
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7701512695136985462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Piano/isGremlinAlive
+  m_EditorClassIdentifier: 
+  Name: isGremlinAlive
+  StudioPath: 
+  Min: -1
+  Max: 1
+  Default: 0
+  ID:
+    data1: 943922923
+    data2: 3285639766
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8141998068430954990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Pause
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Pause
+  Guid:
+    Data1: -486169448
+    Data2: 1176316696
+    Data3: -1368499021
+    Data4: -693149788
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8179708062584436292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reverb/Sewer Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reverb/Sewer Reverb
+  Guid:
+    Data1: -1056447858
+    Data2: 1286244155
+    Data3: -26701164
+    Data4: 1208754546
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &9060262719194871311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Strings
+  m_EditorClassIdentifier: 
+  Path: event:/Strings
+  Guid:
+    Data1: -1946405423
+    Data2: 1164293775
+    Data3: -1699977086
+    Data4: 100018213
+  Banks:
+  - {fileID: 4350554915367717785}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -729199473787058114}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16169
