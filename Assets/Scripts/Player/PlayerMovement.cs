@@ -22,20 +22,22 @@ public class PlayerMovement : MonoBehaviour
 
         //Debug.Log($"Movement {context.phase} {context.ReadValue<Vector2>()}");
         Vector2 curr_val = context.ReadValue<Vector2>();
-        switch (context.phase){
-            case InputActionPhase.Started:
-                playerVelocity.x = curr_val.x;
-                playerVelocity.z = curr_val.y;
-                break;
-            
-            case InputActionPhase.Performed:
-                playerVelocity.x = curr_val.x;
-                playerVelocity.z = curr_val.y;
-                break;
-            
-            case InputActionPhase.Canceled:
-                playerVelocity = Vector3.zero;
-                break;
+        if(!PauseMenu.isPaused){
+            switch (context.phase){
+                case InputActionPhase.Started:
+                    playerVelocity.x = curr_val.x;
+                    playerVelocity.z = curr_val.y;
+                    break;
+                
+                case InputActionPhase.Performed:
+                    playerVelocity.x = curr_val.x;
+                    playerVelocity.z = curr_val.y;
+                    break;
+                
+                case InputActionPhase.Canceled:
+                    playerVelocity = Vector3.zero;
+                    break;
+            }
         }
     }
 

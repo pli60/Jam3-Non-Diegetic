@@ -23,24 +23,32 @@ public class PlayerHit : MonoBehaviour
 
     public void OnSwing(InputAction.CallbackContext context){
 
-        switch (context.phase){
-            case InputActionPhase.Started:
-                if (!isSwinging){
-                    StartCoroutine(Swing());
-                }
-                if (UnityEngine.Cursor.visible && !fn.trigger){
-                    UnityEngine.Cursor.lockState = CursorLockMode.Locked;
-                    UnityEngine.Cursor.visible = false;
-                }
-                break;
-            
-            case InputActionPhase.Performed:
+        if(!PauseMenu.isPaused){
+            switch (context.phase){
+                case InputActionPhase.Started:
+                    if (!isSwinging){
+                        StartCoroutine(Swing());
+                    }
+                    if (!UnityEngine.Cursor.visible && fn.trigger){
+                        UnityEngine.Cursor.lockState = CursorLockMode.None;
+                        UnityEngine.Cursor.visible = true;
+                    } else{
+                        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+                        UnityEngine.Cursor.visible = false;
+                    }
+                    break;
+                
+                case InputActionPhase.Performed:
 
-                break;
-            
-            case InputActionPhase.Canceled:
+                    break;
+                
+                case InputActionPhase.Canceled:
 
-                break;
+                    break;
+            }
+        } else {
+            Cursor.lockState = CursorLockMode.None;
+            UnityEngine.Cursor.visible = true;
         }
     }
 

@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame(){
         SceneManager.LoadScene("SampleScene");
+        PauseMenu.isPaused = false;
     }
 
     public void GoToMainMenu(){

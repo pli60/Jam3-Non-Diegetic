@@ -20,15 +20,17 @@ public class MusicSourceBehavior : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {   
         //Debug.Log("Beep");
-        if (collision.gameObject.tag == "Gremlin")
-        {   
-            currGremlin = collision.gameObject;
-            isSpawned = true;
-            gameObject.GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("IsGremlinAlive", 1);
-            // musicBox = GameObject.Find("FinalSong");
-            // musicBox.SetActive(true);
-            // Instantiate(musicBox, transform.position, Quaternion.identity);
-            finale.musicCount++;
+        if(!PauseMenu.isPaused){
+            if (collision.gameObject.tag == "Gremlin")
+            {   
+                currGremlin = collision.gameObject;
+                isSpawned = true;
+                gameObject.GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("IsGremlinAlive", 1);
+                // musicBox = GameObject.Find("FinalSong");
+                // musicBox.SetActive(true);
+                // Instantiate(musicBox, transform.position, Quaternion.identity);
+                finale.musicCount++;
+            }
         }
     }
 
@@ -46,16 +48,18 @@ public class MusicSourceBehavior : MonoBehaviour
     void Update()
     {   
         // Check if gremlin is destroyed
-        if (isSpawned && currGremlin == null && finale.musicCount < 5)   {
-           gameObject.GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("IsGremlinAlive", 0);
-            isSpawned = false;
-            finale.musicCount--;
-        }
-        else if (finale.musicCount == 5)
-        {
-            isSpawned = false;
-            gameObject.GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("IsGremlinAlive", -1);
-            // input invincible gremlin logic here;
+        if(!PauseMenu.isPaused){
+            if (isSpawned && currGremlin == null && finale.musicCount < 5)   {
+            gameObject.GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("IsGremlinAlive", 0);
+                isSpawned = false;
+                finale.musicCount--;
+            }
+            else if (finale.musicCount == 5)
+            {
+                isSpawned = false;
+                gameObject.GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("IsGremlinAlive", -1);
+                // input invincible gremlin logic here;
+            }
         }
     }
 }
