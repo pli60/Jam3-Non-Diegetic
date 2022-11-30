@@ -18,20 +18,15 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // AudioSource[] audios = FindObjectsOfType<AudioSource>();
+        var Setting = GameObject.FindWithTag("Settings");
         if(Input.GetKeyDown(KeyCode.Escape)){
             if(isPaused){
                 ResumeGame();
-                // foreach (AudioSource a in audios){
-                //     a.Play();
-                // }
+                Setting.SetActive(false);
             } else{
                 PauseGame();
                 UnityEngine.Cursor.lockState = CursorLockMode.None;
                 UnityEngine.Cursor.visible = true;
-                // foreach (AudioSource a in audios){
-                //     a.Pause();
-                // }
             }
         }
     }

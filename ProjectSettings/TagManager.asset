@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Swatter
   - Gremlin
+  - Settings
   layers:
   - Default
   - TransparentFX

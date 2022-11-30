@@ -23,9 +23,9 @@ public class FinaleManagerScript : MonoBehaviour
         conductor.transform.position = new Vector3(-0.37f, 1.4f, -7.66f);
         
         yield return StartCoroutine(GameOverCoroutine());
-        GameOver.Setup();
         UnityEngine.Cursor.visible = true;
         UnityEngine.Cursor.lockState = CursorLockMode.None;
+        GameOver.Setup();
     }
 
     IEnumerator GameOverCoroutine()

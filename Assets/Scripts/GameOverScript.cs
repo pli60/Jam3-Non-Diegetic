@@ -8,11 +8,16 @@ public class GameOverScript : MonoBehaviour
 {
     public void Setup()
     {
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
+        PauseMenu.isPaused = true;
         gameObject.SetActive(true);
     }
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("SampleScene");
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
+        SceneManager.LoadScene("MainMenu");
     }
 }
